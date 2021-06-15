@@ -25,4 +25,11 @@ func main() {
 	new_slice := []int{8, 9, 10}
 	slice = append(slice, new_slice...)
 	fmt.Println(slice)
+
+	// Recorriendo slices
+
+	slice2 := []string{"hola", "que", "hace"}
+	for i, value := range slice2 {
+		fmt.Println(i, value)
+	}
 }
